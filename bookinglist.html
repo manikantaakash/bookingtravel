@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Booking Details</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Booking Details</h2>
+        <table id="bookingTable">
+            <tr>
+                <th>PNR NO</th>
+                <th>Travel Date</th>
+                <th>Source</th>
+                <th>Destination</th>
+                <th>Seat Preference</th>
+                <th>Meal Preference</th>
+            </tr>
+            <tr>
+                <td>PNR1</td>
+                <td>2023-07-10</td>
+                <td>Source1</td>
+                <td>Destination1</td>
+                <td>Window</td>
+                <td>Veg</td>
+            </tr>
+            <tr>
+                <td>PNR2</td>
+                <td>2023-07-11</td>
+                <td>Source2</td>
+                <td>Destination2</td>
+                <td>Middle</td>
+                <td>Non Veg</td>
+            </tr>
+            <tr>
+                <td>PNR3</td>
+                <td>2023-07-12</td>
+                <td>Source3</td>
+                <td>Destination3</td>
+                <td>Aisle</td>
+                <td>Veg</td>
+            </tr>
+            <tr>
+                <td>PNR4</td>
+                <td>2023-07-13</td>
+                <td>Source4</td>
+                <td>Destination4</td>
+                <td>Window</td>
+                <td>Veg</td>
+            </tr>
+            <tr>
+                <td>PNR5</td>
+                <td>2023-07-14</td>
+                <td>Source5</td>
+                <td>Destination5</td>
+                <td>Middle</td>
+                <td>Non Veg</td>
+            </tr>
+            <tr>
+                <td>PNR6</td>
+                <td>2023-07-15</td>
+                <td>Source6</td>
+                <td>Destination6</td>
+                <td>Window</td>
+                <td>Veg</td>
+            </tr>
+            <tr>
+                <td>PNR7</td>
+                <td>2023-07-16</td>
+                <td>Source7</td>
+                <td>Destination7</td>
+                <td>Middle</td>
+                <td>Non Veg</td>
+            </tr>
+            <tr>
+                <td>PNR8</td>
+                <td>2023-07-17</td>
+                <td>Source8</td>
+                <td>Destination8</td>
+                <td>Aisle</td>
+                <td>Veg</td>
+            </tr>
+        </table>
+        <div class="pagination">
+            <a href="#" class="button" id="prevBtn">Prev</a>
+            <a href="#" class="button" id="nextBtn">Next</a>
+        </div>
+    </div>
+
+    <script>
+        var currentPage = 0;
+        var rowsPerPage = 5;
+
+        function showRows(page) {
+            var rows = document.getElementById('bookingTable').rows;
+            for (var i = 1; i < rows.length; i++) {
+                rows[i].style.display = (i >= (page * rowsPerPage + 1) && i <= (page * rowsPerPage + rowsPerPage)) ? 'table-row' : 'none';
+            }
+        }
+
+        document.getElementById('prevBtn').addEventListener('click', function(event) {
+            event.preventDefault();
+            if (currentPage > 0) {
+                currentPage--;
+                showRows(currentPage);
+            }
+        });
+
+        document.getElementById('nextBtn').addEventListener('click', function(event) {
+            event.preventDefault();
+            var rows = document.getElementById('bookingTable').rows;
+            if ((currentPage + 1) * rowsPerPage < rows.length - 1) {
+                currentPage++;
+                showRows(currentPage);
+            }
+        });
+
+        // Initial display
+        showRows(currentPage);
+    </script>
+</body>
+</html>

@@ -1,0 +1,157 @@
+body {
+    background-image: url('https://images.wallpaperscraft.com/image/single/silhouette_travel_hill_187424_3840x2400.jpg');
+    background-size: cover;
+    /*background-clip: content-box;*/
+    background-repeat: no-repeat;
+    /*background-position: center;*/
+    /*background-origin: content-box ;*/
+    /*padding: 50px;*/
+    /*font-family: 'Akaya Kanadaka';*/
+    background-attachment: fixed;
+
+  }
+
+  .containerindex {
+    text-align: center;
+    padding-top: 200px;
+  }
+  
+
+  .container {
+      max-width: 500px;
+      margin: 60px auto;
+      padding: 20px;
+      background-color: #ffffff;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      box-shadow: 7px 7px 10px #cbced1, -7px -7px 10px ;
+      border-radius: 20px;
+  }
+
+  h2 {
+      text-align: center;
+  }
+
+  form {
+      margin-bottom: 20px;
+  }
+
+  label {
+      display: block;
+      margin-bottom: 5px;
+  }
+ a{
+    text-decoration-line: none;
+ }
+  
+  input,
+  select,
+  textarea {
+      width: 100%;
+      padding: 10px;
+      border-radius: 3px;
+      border: 1px solid #ccc;
+      box-sizing: border-box;
+      margin-bottom: 10px;
+      border-radius: 20px;
+      box-shadow: 14px 14px 20px #cbced1;
+  }
+
+  input[type="submit"] {
+      background-color: #f99704;
+      color: #ffffff;
+      padding: 15px 30px;
+      border: none;
+      border-radius: 13px;
+      cursor: pointer;
+      box-shadow: 14px 14px 20px #cbced1;
+      
+  }
+  .submit-container {
+      text-align: center;
+  }
+
+  #acknowledgment-screen {
+      display: none;
+      text-align: center;
+      padding: 20px;
+      background-color: #ffffff;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+
+  .success-message {
+      color: rgb(2, 245, 19);
+      margin-bottom: 10px;
+  }
+
+  #acknowledgment-screen p {
+      margin-bottom: 5px;
+  }
+
+  .button {
+    font-family: 'Akaya Kanadaka';
+    display: inline-block;
+    padding: 12px 24px;
+    font-size: 20px;
+    background-color: #f99704;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 25px;
+    margin: 10px 20px;
+    width: 150px;
+  }
+  .text{
+     color: rgb(237, 237, 244);
+     font-family: 'Akaya Kanadaka';
+  }
+  #spanid{
+    color: #4caf50;
+    text-align:center;
+    text-size-adjust: 75px;
+  }
+  .statusclass
+  {
+    text-align: center;
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #f99704;
+}
+
+/* Pagination styles */
+.pagination {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.pagination a {
+    display: inline-block;
+    padding: 8px 16px;
+    text-decoration: none;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin: 0 4px;
+}
+
+.pagination a.active {
+    background-color: #f99704;
+    color: white;
+    border: 1px solid #f99704;
+}
+
+/*.pagination a:hover:not(.active) {
+    background-color: #ddd;
+}*/

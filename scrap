@@ -1,0 +1,79 @@
+ <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+        }
+
+        .container {
+            max-width: 500px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            box-shadow: 7px 7px 10px #cbced1, -7px -7px 10px ;
+            border-radius: 20px;
+            
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        form {
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="password"],
+        input[type="tel"],
+        textarea {
+            width: 100%;
+            padding: 10px;
+            border-radius: 3px;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+            margin-bottom: 10px;
+            border-radius: 20px;
+            box-shadow: 14px 14px 20px #cbced1;
+        }
+
+        input[type="submit"] {
+            background-color: #4caf50;
+            color: #ffffff;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 13px;
+            cursor: pointer;
+            box-shadow: 14px 14px 20px #cbced1;
+            
+        }
+        .submit-container {
+            text-align: center;
+        }
+
+        #acknowledgment-screen {
+            display: none;
+            text-align: center;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .success-message {
+            color: green;
+            margin-bottom: 10px;
+        }
+
+        #acknowledgment-screen p {
+            margin-bottom: 5px;
+        }
+    </style>
